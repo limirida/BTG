@@ -1,0 +1,224 @@
+@media (max-width:1920px) {
+    .request {
+        background-image: url(../img/consult/plane.png), url(../img/consult/consult-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 347px 93px, cover;
+        background-position: 10px 50%;
+    }
+}
+
+@media (max-width:1512px) {
+    .request {
+        background-image: url(../img/consult/plane.png), url(../img/consult/consult-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 247px 93px, cover;
+        background-position: 10px 50%;
+    }
+}
+
+@media (max-width:1408px) {
+    .info-img {
+        margin: 0 auto;
+    }
+
+    .info-item {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width:1300px) {
+    .request {
+        background-image: url(../img/consult/plane.png), url(../img/consult/consult-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 147px 63px, cover;
+        background-position: 10px 50%;
+    }
+}
+
+@media (max-width: 1252px) {
+    .slider-carousel .slick-next {
+        left: -105px;
+    }
+
+    .slider-carousel .slick-prev {
+        right: 0;
+    }
+}
+
+@media (max-width: 1206px) {
+    .service-wrap {
+        justify-content: space-around;
+    }
+
+    .news-wrap {
+        justify-content: space-around;
+    }
+
+    .header-items {
+        padding: 52px 20px;
+    }
+
+    .footer-wrap {
+        padding: 35px 20px 54px;
+    }
+}
+
+@media (max-width:1124px) {
+    .request {
+        background-image: url(../img/consult/consult-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width:1060px) {
+    .slider-wrap {
+        max-width: 605px;
+    }
+
+    .import-title {
+        font-size: 41px;
+    }
+
+    .slider-title {
+        font-size: 41px;
+        margin-bottom: 21px;
+    }
+
+    .slider-carousel .slick-next {
+        left: -50px;
+    }
+
+    .slider-carousel .slick-prev {
+        right: 100px;
+    }
+}
+
+@media (max-width:944px) {
+    .info-img img {
+        max-width: 700px;
+        max-height: 600px;
+    }
+
+    .slider-carousel .slick-next {
+        display: none;
+    }
+
+    .slick-slider .slick-arrow {
+        display: none;
+    }
+
+    .info-wrap {
+        padding-top: 80px;
+        padding-left: 20px;
+    }
+
+    .service {
+        margin: 0;
+        padding: 0;
+    }
+
+    .news {
+        margin: 0;
+    }
+}
+
+
+@media (max-width:864px) {
+    .slider-info {
+        margin-left: 180px;
+    }
+
+    .slider-title {
+        font-size: 31px;
+    }
+
+    .slider-info p {
+        max-width: 385px;
+    }
+
+    .import-title {
+        font-size: 31px;
+    }
+}
+
+@media (max-width:788px) {
+    .footer-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+
+@media (max-width:788px) {
+    .info {
+        padding: 0;
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .services-name {
+        text-align: left;
+        font-size: 26px;
+    }
+
+    .info-wrap {
+        padding-top: 20px;
+    }
+
+    .news-info img {
+        margin-bottom: 20px;
+    }
+
+    .news-description {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .news-date {
+        margin-left: 0;
+    }
+
+    .import {
+        margin: 0;
+    }
+
+    .service-heading {
+        margin: 54px 43px 58px;
+    }
+
+    .partners-content {
+        max-width: 231px;
+    }
+
+    .wrap-service {
+        padding: 0;
+    }
+}
+
+
+@media (max-width:768px) {
+    .service {
+        padding: 0;
+    }
+
+    .form__field {
+        width: 40%;
+    }
+
+    .form__explanation {
+        width: 80%;
+    }
+}
+
+@media (max-width:710px) {
+    .info-img img {
+        max-width: 400px;
+        max-height: 300px;
+    }
+}
