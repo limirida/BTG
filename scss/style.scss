@@ -76,7 +76,7 @@
 }
 
 .slider-title {
-    width: 552px;
+    max-width: 552px;
     font-size: 61px;
     font-weight: bold;
     line-height: 1.1;
@@ -129,7 +129,7 @@
 
 .slider-carousel {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     text-align: left;
     position: relative;
 }
@@ -173,18 +173,11 @@ input[type="search"] {
     transition: all .5s;
 }
 
+
 .slider-carousel .slick-prev {
     position: absolute;
     right: -205px;
     top: 70px;
-    width: 24px;
-    height: 47px;
-    font-size: 0;
-    color: transparent;
-    background-color: transparent;
-    background-image: url(../img/main/nextArrow.svg);
-    background-repeat: no-repeat;
-    border: none;
     z-index: 10;
 }
 
@@ -192,14 +185,6 @@ input[type="search"] {
     position: absolute;
     left: -205px;
     top: 70px;
-    width: 24px;
-    height: 47px;
-    font-size: 0;
-    color: transparent;
-    background-color: transparent;
-    background-image: url(../img/main/prevArrow.svg);
-    background-repeat: no-repeat;
-    border: none;
     z-index: 10;
 }
 
@@ -227,6 +212,7 @@ input[type="search"] {
 .service {
     color: #242830;
     padding-bottom: 83px;
+    position: relative;
 }
 
 .wrap {
@@ -357,7 +343,6 @@ input[type="search"] {
 }
 
 .wrap-service {
-    position: relative;
     background: #f8f8f8;
     margin-top: -10%;
     z-index: 10;
@@ -493,18 +478,11 @@ input[type="search"] {
     text-align: left;
 }
 
+
 .import .slick-next {
     position: absolute;
     left: 63px;
     top: 50%;
-    width: 24px;
-    height: 47px;
-    font-size: 0;
-    color: transparent;
-    background-color: transparent;
-    background-image: url(../img/main/prevArrow.svg);
-    background-repeat: no-repeat;
-    border: none;
     z-index: 10;
 }
 
@@ -512,14 +490,6 @@ input[type="search"] {
     position: absolute;
     right: 63px;
     top: 50%;
-    width: 24px;
-    height: 47px;
-    font-size: 0;
-    color: transparent;
-    background-color: transparent;
-    background-image: url(../img/main/nextArrow.svg);
-    background-repeat: no-repeat;
-    border: none;
     z-index: 10;
 }
 
@@ -546,12 +516,22 @@ input[type="search"] {
     }
 }
 
+.form-items {
+    padding-bottom: 48px;
+}
+
 .form-btn {
     padding: 10px 34px;
     text-align: center;
     background: linear-gradient(500deg, #245480, #216d9a);
-    margin: 48px 270px 28px;
 }
+
+.form-wrap__btn {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 28px;
+}
+
 
 .request {
     background-image: url(../img/consult/plane.png), url(../img/consult/consult-bg.jpg);
@@ -567,7 +547,7 @@ input[type="search"] {
 
 .form__wrap {
     border: none;
-    width: 777px;
+    max-width: 777px;
     margin: 0 auto;
 }
 
@@ -591,27 +571,26 @@ input[type="search"] {
 
 .form__mark {
     padding-left: 30px;
-}
-
-#wherefrom,
-#where {
     background: url(../img/consult/geo.png) no-repeat;
 }
+
 
 .form__field:nth-child(1) {
     margin-right: 40px;
 }
 
 .form__explanation {
-    width: 680px;
+    max-width: 680px;
     font-family: Roboto;
     font-size: 15px;
     line-height: 1.6;
     text-align: center;
     color: #303030;
-    margin: 0;
+    margin: 0 auto;
     padding-bottom: 53px;
 }
+
+
 
 .footer {
     color: #000000;
@@ -655,7 +634,8 @@ input[type="search"] {
     margin-top: 30px;
 }
 
-.overlay {
+.overlay,
+.overlay--call {
     position: fixed;
     display: none;
     top: 0;
@@ -674,8 +654,10 @@ input[type="search"] {
     top: 20%;
     background-color: #fff;
     z-index: 30;
-
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .popup-heading {
     margin: 0;
@@ -689,7 +671,7 @@ input[type="search"] {
 
 .popup .form__explanation {
     padding-bottom: 0;
-    width: 429px;
+    max-width: 429px;
     margin: 0 auto;
 }
 
@@ -959,7 +941,7 @@ input[type="search"] {
 }
 
 .header-logo__line {
-    min-width: 50px;
+    max-width: 60px;
 }
 
 @import "media";

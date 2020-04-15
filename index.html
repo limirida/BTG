@@ -30,7 +30,7 @@
           <div class="header-item">
             <div class="header-phone">
               <a class="header-number" href="tel:8(961)996-25-03">8 (961) 996-25-03</a>
-              <button class="button header-btn">Заказать звонок</button>
+              <button class="button header-btn popup-call--open">Заказать звонок</button>
             </div>
           </div>
         </div>
@@ -38,6 +38,9 @@
     </header>
     <nav class="header-nav navbar">
       <div class="container">
+        <div class="navbar-burger navbar-burger--open">
+          <span class="navbar-burger__btn"></span>
+        </div>
         <ul class="navbar-list">
           <li class="navbar-item"><a href=#>О компании</a></li>
           <li class="navbar-item"><a href=page.html>Услуги</a></li>
@@ -60,17 +63,17 @@
           <div class="slider-info">
             <h3 class="slider-title">Грузы из Китая с компанией "BTG"</h3>
             <p>Экспорт и импорт грузов из Китая любым видом транспорта. Без переплат и точно в срок!</p>
-            <button class="button slider-btn">Быстрая заявка</button>
+            <button class="button slider-btn popup-application--open">Быстрая заявка</button>
           </div>
           <div class="slider-info">
             <h3 class="slider-title">Грузы из Китая с компанией "BTG"</h3>
             <p>Экспорт и импорт грузов из Китая любым видом транспорта.</p>
-            <button class="button slider-btn">Быстрая заявка</button>
+            <button class="button slider-btn popup-application--open">Быстрая заявка</button>
           </div>
           <div class="slider-info">
             <h3 class="slider-title">Грузы из Китая с компанией "BTG"</h3>
             <p>Экспорт и импорт грузов из Китая любым видом транспорта. Без переплат и точно в срок!</p>
-            <button class="button slider-btn">Быстрая заявка</button>
+            <button class="button slider-btn popup-application--open">Быстрая заявка</button>
           </div>
         </div>
       </div>
@@ -78,9 +81,9 @@
     <section class="service">
       <div class="wrap wrap-service">
         <div class="heading-wrap">
-          <img src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="">
           <h3 class="service-heading">Наши услуги</h3>
-          <img src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="">
         </div>
         <div class="service-wrap">
           <div class="services services__bg-1">
@@ -143,9 +146,9 @@
     <section class="news">
       <div class="wrap">
         <div class="heading-wrap">
-          <img src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="">
           <h3 class="service-heading">Новости</h3>
-          <img src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="">
         </div>
         <div class="news-wrap">
           <a class="news-info">
@@ -176,23 +179,23 @@
         <div class="slider-wrap">
           <h2 class="import-title">Работаем с экспортом и импортом по всему миру</h2>
           <p class="slider-info">Наши специалисты помогут вам доставить<br> ваши грузы в любую точку мира</p>
-          <button class="button slider-btn">Быстрая заявка</button>
+          <button class="button slider-btn popup-application--open">Быстрая заявка</button>
         </div>
       </div>
       <div class="import-slider import-slider__2">
         <div class="slider-wrap">
           <h2 class="import-title">Работаем с экспортом и импортом по всему миру</h2>
           <p class="slider-info">Наши специалисты помогут вам доставить<br> ваши грузы в любую точку мира</p>
-          <button class="button slider-btn">Быстрая заявка</button>
+          <button class="button slider-btn popup-application--open">Быстрая заявка</button>
         </div>
       </div>
     </section>
     <section class="partners">
       <div class="wrap">
         <div class="heading-wrap">
-          <img src="img/news/line.png" alt="#">
+          <img class="heading-line" src="img/news/line.png" alt="#">
           <h3 class="service-heading">Наши партнеры</h3>
-          <img src="img/news/line.png" alt="#">
+          <img class="heading-line" src="img/news/line.png" alt="#">
         </div>
         <div class="partners-wrap">
           <div class="partners-content">
@@ -219,15 +222,19 @@
       <h3 class="service-heading">Запрос на услуги</h3>
       <form action="" class="request-form form">
         <fieldset class="form__wrap">
-          <p class="form__info">
-            <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
-            <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
-          </p>
-          <p class="form__info">
-            <input type="text" class="form__field" placeholder="Как Вас зовут?">
-            <input type="text" class="form__field" placeholder="Номер телефона">
-          </p>
-          <button class="button form-btn" type="submit">Получить расчет</button>
+          <div class="form-items">
+            <div class="form__info">
+              <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
+              <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
+            </div>
+            <div class="form__info">
+              <input type="text" class="form__field" placeholder="Как Вас зовут?">
+              <input type="text" class="form__field" placeholder="Номер телефона">
+            </div>
+          </div>
+          <div class="form-wrap__btn">
+            <button class="button form-btn" type="submit">Получить расчет</button>
+          </div>
           <p class="form__explanation">Нажав кнопку «Получить расчет», я даю согласие на обработку моих
             персональных данных.</p>
         </fieldset>
@@ -265,6 +272,27 @@
               <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
               <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
             </p>
+            <p class="popup-info">
+              <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
+              <input type="text" class="form__field" id="number" placeholder="Номер телефона">
+            </p>
+            <button class="button form-btn" type="submit">Заказать звонок</button>
+            <p class="form__explanation">Нажав кнопку «Заказать звонок», я даю согласие на обработку моих
+              персональных данных.</p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Модальное окно быстрого звонка-->
+  <div class="overlay--call">
+    <div class="popup ">
+      <div class="popup-content">
+        <button class="popup-close">X</button>
+        <h3 class="popup-heading">Заказать звонок</h3>
+        <form action="">
+          <fieldset>
             <p class="popup-info">
               <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
               <input type="text" class="form__field" id="number" placeholder="Номер телефона">
