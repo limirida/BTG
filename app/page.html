@@ -26,16 +26,19 @@
                         <div class="header-item">
                             <div class="header-phone">
                                 <a class="header-number" href="tel:8(961)996-25-03">8 (961) 996-25-03</a>
-                                <button class="button header-btn">Заказать звонок</button>
+                                <button class="button header-btn popup-call--open">Заказать звонок</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <nav class="header-nav header-nav__burger navbar">
+            <nav class="header-nav navbar">
                 <div class="container">
+                    <div class="navbar-burger navbar-burger--open">
+                        <span class="navbar-burger__btn"></span>
+                    </div>
                     <ul class="navbar-list">
-                        <li class="navbar-item"><a href=#>О компании</a></li>
+                        <li class="navbar-item"><a href=index.html>О компании</a></li>
                         <li class="navbar-item"><a href=page.html>Услуги</a></li>
                         <li class="navbar-item"><a href="#">Новости</a></li>
                         <li class="navbar-item"><a href=#>Калькулятор</a></li>
@@ -58,32 +61,42 @@
                     <div class="service-wrap__list">
                         <div class="services__list services__bg-1">
                             <div class="services-wrap">
-                                <p class="services-name">Международные грузоперевозки</p>
+                                <p class="services-name"><a href="#">Международные грузоперевозки</a></p>
                             </div>
                         </div>
                         <div class="services__list services__bg-2">
                             <div class="services-wrap">
-                                <p class="services-name ">Доставка грузов из Китая</p>
+                                <p class="services-name">
+                                    <a href="#">Доставка грузов из Китая</a>
+                                </p>
                             </div>
                         </div>
                         <div class="services__list services__bg-3">
                             <div class="services-wrap">
-                                <p class="services-name">Таможенное оформление</p>
+                                <p class="services-name">
+                                    <a href="#">Таможенное оформление</a>
+                                </p>
                             </div>
                         </div>
                         <div class="services__list services_bg-4">
                             <div class="services-wrap">
-                                <p class="services-name">Контейнерные перевозки</p>
+                                <p class="services-name">
+                                    <a href="#">Контейнерные перевозки</a>
+                                </p>
                             </div>
                         </div>
                         <div class="services__list services__bg-5">
                             <div class="services-wrap">
-                                <p class="services-name ">Доставка сборных грузов</p>
+                                <p class="services-name">
+                                    <a href="#">Доставка сборных грузов</a>
+                                </p>
                             </div>
                         </div>
                         <div class="services__list services__bg-6">
                             <div class="services-wrap">
-                                <p class="services-name">Финансирование поставок</p>
+                                <p class="services-name">
+                                    <a href="#">Финансирование поставок</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -137,32 +150,34 @@
                 <div class="content-table">
                     <h3 class="content-heading table">Таблица</h3>
                     <table class="table-wrap">
+                        <thead>
+                            <tr class="table-line">
+                                <th class="table-cell table-heading">Фамилия</th>
+                                <th class="table-cell table-heading">Имя</th>
+                                <th class="table-cell table-heading">Отчество</th>
+                                <th class="table-cell table-heading">Телефон</th>
+                                <th class="table-cell table-heading">Адрес</th>
+                                <th class="table-cell table-heading">Семейное положение</th>
+                                <th class="table-cell table-heading">Код подразделения</th>
+                            </tr>
+                        </thead>
                         <tr class="table-line">
-                            <th class="table-cell table-heading">Фамилия</th>
-                            <th class="table-cell table-heading">Имя</th>
-                            <th class="table-cell table-heading">Отчество</th>
-                            <th class="table-cell table-heading">Телефон</th>
-                            <th class="table-cell table-heading">Адрес</th>
-                            <th class="table-cell table-heading">Семейное положение</th>
-                            <th class="table-cell table-heading">Код подразделения</th>
+                            <td class="table-cell" data-label="Фамилия">Фамилия</th>
+                            <td class="table-cell" data-label="Имя">Имя</th>
+                            <td class="table-cell" data-label="Отчество">Отчество</th>
+                            <td class="table-cell" data-label="Телефон">Телефон</th>
+                            <td class="table-cell" data-label="Адрес">Адрес</th>
+                            <td class="table-cell" data-label="Семейное положение">Семейное положение</th>
+                            <td class="table-cell" data-label="Код подразделения">Код подразделения</td>
                         </tr>
                         <tr class="table-line">
-                            <td class="table-cell">Фамилия</th>
-                            <td class="table-cell">Имя</th>
-                            <td class="table-cell">Отчество</th>
-                            <td class="table-cell">Телефон</th>
-                            <td class="table-cell">Адрес</th>
-                            <td class="table-cell">Семейное положение</th>
-                            <td class="table-cell">Код подразделения</td>
-                        </tr>
-                        <tr class="table-line">
-                            <td class="table-cell">Фамилия</th>
-                            <td class="table-cell">Имя</th>
-                            <td class="table-cell">Отчество</th>
-                            <td class="table-cell">Телефон</th>
-                            <td class="table-cell">Адрес</th>
-                            <td class="table-cell">Семейное положение</th>
-                            <td class="table-cell">Код подразделения</td>
+                            <td class="table-cell" data-label="Фамилия">Фамилия</th>
+                            <td class="table-cell" data-label="Имя">Имя</th>
+                            <td class="table-cell" data-label="Отчество">Отчество</th>
+                            <td class="table-cell" data-label="Телефон">Телефон</th>
+                            <td class="table-cell" data-label="Адрес">Адрес</th>
+                            <td class="table-cell" data-label="Семейное положение">Семейное положение</th>
+                            <td class="table-cell" data-label="Код подразделения">Код подразделения</td>
                         </tr>
                     </table>
                 </div>
@@ -179,21 +194,24 @@
 
 
     </main>
-    <th></th>
     <footer class="footer">
         <div class=" footer request">
             <h3 class="service-heading">Запрос на услуги</h3>
             <form action="" class="request-form form">
                 <fieldset class="form__wrap">
-                    <p class="form__info">
-                        <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
-                        <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
-                    </p>
-                    <p class="form__info">
-                        <input type="text" class="form__field" placeholder="Как Вас зовут?">
-                        <input type="text" class="form__field" placeholder="Номер телефона">
-                    </p>
-                    <button class="button form-btn" type="submit">Получить расчет</button>
+                    <div class="form-items">
+                        <div class="form__info">
+                            <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
+                            <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
+                        </div>
+                        <div class="form__info">
+                            <input type="text" class="form__field" placeholder="Как Вас зовут?">
+                            <input type="text" class="form__field" placeholder="Номер телефона">
+                        </div>
+                    </div>
+                    <div class="form-wrap__btn">
+                        <button class="button form-btn" type="submit">Получить расчет</button>
+                    </div>
                     <p class="form__explanation">Нажав кнопку «Получить расчет», я даю согласие на обработку моих
                         персональных данных.</p>
                 </fieldset>
@@ -244,18 +262,14 @@
         </div>
     </div>
 
-    <!--Модальное окно быстрой заявки-->
-    <div class="overlay">
-        <div class="popup petition">
+    <!--Модальное окно быстрого звонка-->
+    <div class="overlay--call">
+        <div class="popup ">
             <div class="popup-content">
                 <button class="popup-close">X</button>
-                <h3 class="popup-heading">Быстрая заявка</h3>
+                <h3 class="popup-heading">Заказать звонок</h3>
                 <form action="">
                     <fieldset>
-                        <p class="form__info">
-                            <input type="text" class="form__field form__mark" id="wherefrom" placeholder="Откуда">
-                            <input type="text" class="form__field form__mark" id="where" placeholder="Куда">
-                        </p>
                         <p class="popup-info">
                             <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
                             <input type="text" class="form__field" id="number" placeholder="Номер телефона">
@@ -268,6 +282,8 @@
             </div>
         </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/libs.min.js"></script>

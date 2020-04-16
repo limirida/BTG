@@ -5,9 +5,7 @@
 @import "normalize";
 
 .header-wrap {
-    position: absolute;
     width: 100%;
-    z-index: 10;
 }
 
 .header-items {
@@ -22,7 +20,7 @@
 .header-logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header-item {
@@ -33,6 +31,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.28px;
+    text-align: center;
 }
 
 .header-phone {
@@ -69,8 +68,8 @@
 }
 
 .slider {
-    position: relative;
-    padding-top: 369px;
+    margin-top: -500px;
+    padding-top: 569px;
     background: url(../img/main/main-ship.jpg) no-repeat;
     background-size: cover;
 }
@@ -294,6 +293,17 @@ input[type="search"] {
     letter-spacing: 0.32px;
     padding-top: 39px;
     padding-bottom: 30px;
+}
+
+.service-wrap__list .services-name a {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    padding-top: 39px;
+    padding-bottom: 30px;
+    color: #000000;
 }
 
 .services-link {
@@ -761,6 +771,80 @@ input[type="search"] {
     }
 }
 
+
+.services__bg-1 {
+    background: url(../img/main/earch.png) no-repeat 50px center;
+}
+
+.services__bg-2 {
+    background: url(../img/main/hands.png) no-repeat 50px center;
+}
+
+.services__bg-3 {
+    background: url(../img/main/box.png) no-repeat 50px center;
+}
+
+.services_bg-4 {
+    background: url(../img/main/cont.png) no-repeat 50px center;
+}
+
+.services__bg-5 {
+    background: url(../img/main/box-2.png) no-repeat 50px center;
+}
+
+.services__bg-6 {
+    background: url(../img/main/calc.png) no-repeat 50px center;
+}
+
+.services__bg-1:hover {
+    background: url(../img/main/earch-2.png) no-repeat 18px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 27px;
+}
+
+.services__bg-2:hover {
+    background: url(../img/main/hands-2.png) no-repeat 27px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 27px;
+}
+
+.services__bg-3:hover {
+    background: url(../img/main/box-hov.png) no-repeat 27px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 27px;
+}
+
+.services_bg-4:hover {
+    background: url(../img/main/cont-2.png) no-repeat 27px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 27px;
+}
+
+.services__bg-5:hover {
+    background: url(../img/main/box-2-hov.png) no-repeat 27px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 27px;
+}
+
+.services__bg-6:hover {
+    background: url(../img/main/calc-2.png) no-repeat 27px center;
+    background-color: #272e3c;
+    color: #ffffff;
+    background-size: 21px 28px;
+}
+
+
+.main-wrap .services-name {
+    width: 351px;
+    text-align: left;
+    padding: 25px 25px 21px 60px;
+}
+
 .service-heading__list {
     margin-bottom: 22px;
     font-size: 20px;
@@ -781,11 +865,11 @@ input[type="search"] {
 }
 
 .main-service {
-    width: 35%;
+    max-width: 351px;
 }
 
 .main-content {
-    width: 62%;
+    max-width: 845px;
 }
 
 .gallery__wrap {
@@ -812,6 +896,7 @@ input[type="search"] {
 }
 
 .main-content p {
+    max-width: 792px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -943,5 +1028,7 @@ input[type="search"] {
 .header-logo__line {
     max-width: 60px;
 }
+
+
 
 @import "media";
