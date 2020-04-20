@@ -15,17 +15,18 @@
 </head>
 
 <body>
-  <div class="header-wrap">
-    <header class="header">
+
+  <header class="header">
+    <div class="header-wrap">
       <div class="container">
         <div class="header-items">
           <div class="header-item">
             <p>Импортно-экспортная компания</p>
           </div>
           <div class="header-item header-logo">
-            <img class="header-logo__line" src="img/main/line.png" alt="">
-            <a href="index.html"><img src="img/main/main-logo.png" alt=""></a>
-            <img class="header-logo__line" src="img/main/line.png" alt="">
+            <img class="header-logo__line" src="img/main/line.png" alt="линия">
+            <a href="index.html"><img src="img/main/main-logo.png" alt="BTG логотип"></a>
+            <img class="header-logo__line" src="img/main/line.png" alt="линия">
           </div>
           <div class="header-item">
             <div class="header-phone">
@@ -35,27 +36,28 @@
           </div>
         </div>
       </div>
-    </header>
-    <nav class="header-nav navbar">
-      <div class="container">
-        <div class="navbar-burger navbar-burger--open">
-          <span class="navbar-burger__btn"></span>
+      <nav class="header-nav navbar">
+        <div class="container">
+          <div class="navbar-burger navbar-burger--open">
+            <span class="navbar-burger__btn"></span>
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href=#>О компании</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=page.html>Услуги</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#news">Новости</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=#>Калькулятор</a></li>
+            <li class="navbar-item"><a class="navbar-link" href=#>Контакты</a></li>
+            <li class="navbar-item">
+              <form id="navbar-search">
+                <input type="search" placeholder="Искать">
+              </form>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar-list">
-          <li class="navbar-item"><a href=#>О компании</a></li>
-          <li class="navbar-item"><a href=page.html>Услуги</a></li>
-          <li class="navbar-item"><a href="#">Новости</a></li>
-          <li class="navbar-item"><a href=#>Калькулятор</a></li>
-          <li class="navbar-item"><a href=#>Контакты</a></li>
-          <li class="navbar-item">
-            <form id="navbar-search">
-              <input type="search" placeholder="Искать">
-            </form>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="slider">
       <div class="container">
@@ -81,9 +83,9 @@
     <section class="service">
       <div class="wrap wrap-service">
         <div class="heading-wrap">
-          <img class="heading-line" src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
           <h3 class="service-heading">Наши услуги</h3>
-          <img class="heading-line" src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
         </div>
         <div class="service-wrap">
           <div class="services services__bg-1">
@@ -127,7 +129,7 @@
     </section>
     <section class="info">
       <div class="info-img">
-        <img src="img/trans/ship-trans.jpg" width="960" height="620" alt="">
+        <img src="img/trans/ship-trans.jpg" width="960" height="620" alt="корабль">
       </div>
       <div class="info-wrap">
         <div class="info-heading">
@@ -143,31 +145,31 @@
         </div>
       </div>
     </section>
-    <section class="news">
-      <div class="wrap">
+    <section class="news" id="news">
+      <div class="news-headin__wrap wrap">
         <div class="heading-wrap">
-          <img class="heading-line" src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
           <h3 class="service-heading">Новости</h3>
-          <img class="heading-line" src="img/news/line.png" alt="">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
         </div>
         <div class="news-wrap">
           <a class="news-info">
-            <img src="img/news/img-1.jpg" width="291" height="227" alt="" class="news-img">
+            <img src="img/news/img-1.jpg" width="291" height="227" alt="автомобиль" class="news-img">
             <p class="news-description">Открытие нового направления поставок</p>
             <p class="news-date">15.09.17</p>
           </a>
           <a class="news-info">
-            <img src="img/news/img-2.jpg" width="291" height="227" alt="" class="news-img">
+            <img src="img/news/img-2.jpg" width="291" height="227" alt="грузовое судно" class="news-img">
             <p class="news-description">Открытие нового направления поставок</p>
             <p class="news-date">15.09.17</p>
           </a>
           <a class="news-info">
-            <img src="img/news/img-3.jpg" width="291" height="227" alt="" class="news-img">
+            <img src="img/news/img-3.jpg" width="291" height="227" alt="самолет" class="news-img">
             <p class="news-description">Открытие нового направления поставок</p>
             <p class="news-date">15.09.17</p>
           </a>
           <a class="news-info">
-            <img src="img/news/img-4.jpg" width="291" height="227" alt="" class="news-img">
+            <img src="img/news/img-4.jpg" width="291" height="227" alt="грузовые контейнеры" class="news-img">
             <p class="news-description">Открытие нового направления поставок</p>
             <p class="news-date">15.09.17</p>
           </a>
@@ -193,25 +195,25 @@
     <section class="partners">
       <div class="wrap">
         <div class="heading-wrap">
-          <img class="heading-line" src="img/news/line.png" alt="#">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
           <h3 class="service-heading">Наши партнеры</h3>
-          <img class="heading-line" src="img/news/line.png" alt="#">
+          <img class="heading-line" src="img/news/line.png" alt="линия">
         </div>
         <div class="partners-wrap">
           <div class="partners-content">
-            <img src="img/hp.png" alt="#" class="partners-img">
+            <img src="img/hp.png" alt="hp" class="partners-img">
           </div>
           <div class="partners-content">
-            <img src="img/canon.png" alt="#" class="partners-img">
+            <img src="img/canon.png" alt="canon" class="partners-img">
           </div>
           <div class="partners-content">
-            <img src="img/dell.png" alt="#" class="partners-img">
+            <img src="img/dell.png" alt="dell" class="partners-img">
           </div>
           <div class="partners-content">
-            <img src="img/hp.png" alt="#" class="partners-img">
+            <img src="img/hp.png" alt="hp" class="partners-img">
           </div>
           <div class="partners-content">
-            <img src="img/canon.png" alt="#" class="partners-img">
+            <img src="img/canon.png" alt="canon" class="partners-img">
           </div>
         </div>
       </div>
@@ -229,11 +231,11 @@
             </div>
             <div class="form__info">
               <input type="text" class="form__field" placeholder="Как Вас зовут?">
-              <input type="text" class="form__field" placeholder="Номер телефона">
+              <input type="tel" class="form__field" placeholder="Номер телефона">
             </div>
           </div>
           <div class="form-wrap__btn">
-            <button class="button form-btn" type="submit">Получить расчет</button>
+            <button class="button form-btn" aria-label="Получить расчет" type="submit">Получить расчет</button>
           </div>
           <p class="form__explanation">Нажав кнопку «Получить расчет», я даю согласие на обработку моих
             персональных данных.</p>
@@ -242,20 +244,20 @@
     </div>
     <div class="wrap">
       <div class="footer-wrap">
-        <a href="#" class="logo"><img src="img/footer/logo.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="img/footer/logo.png" alt="BTG логотип"></a>
         <nav class="footer-nav navbar">
           <div class="container">
             <ul class="navbar-list">
-              <li class="navbar-item"><a href=#>О компании</a></li>
-              <li class="navbar-item"><a href=#>Услуги</a></li>
-              <li class="navbar-item"><a href=#>Новости</a></li>
-              <li class="navbar-item"><a href=#>Калькулятор</a></li>
-              <li class="navbar-item"><a href=#>Контакты</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">О компании</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="page.html">Услуги</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#news">Новости</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Калькулятор</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Контакты</a></li>
             </ul>
           </div>
         </nav>
         <p class="footer-author">Создание сайта:<a href="#" class="author-logo"><img src="img/footer/dev-logo.png"
-              width="95" height="32" alt="#"></a></p>
+              width="95" height="32" alt="ИРС логотип"></a></p>
       </div>
     </div>
   </footer>
@@ -264,7 +266,7 @@
   <div class="overlay">
     <div class="popup petition">
       <div class="popup-content">
-        <button class="popup-close">X</button>
+        <button aria-label="Закрыть" class="popup-close">X</button>
         <h3 class="popup-heading">Быстрая заявка</h3>
         <form action="">
           <fieldset>
@@ -274,9 +276,9 @@
             </p>
             <p class="popup-info">
               <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
-              <input type="text" class="form__field" id="number" placeholder="Номер телефона">
+              <input type="tel" class="form__field" id="number" placeholder="Номер телефона">
             </p>
-            <button class="button form-btn" type="submit">Заказать звонок</button>
+            <button class="button form-btn" aria-label="Заказать звонок" type="submit">Заказать звонок</button>
             <p class="form__explanation">Нажав кнопку «Заказать звонок», я даю согласие на обработку моих
               персональных данных.</p>
           </fieldset>
@@ -289,15 +291,15 @@
   <div class="overlay--call">
     <div class="popup ">
       <div class="popup-content">
-        <button class="popup-close">X</button>
+        <button aria-label="закрыть" class="popup-close">X</button>
         <h3 class="popup-heading">Заказать звонок</h3>
         <form action="">
           <fieldset>
             <p class="popup-info">
               <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
-              <input type="text" class="form__field" id="number" placeholder="Номер телефона">
+              <input type="tel" class="form__field" id="number" placeholder="Номер телефона">
             </p>
-            <button class="button form-btn" type="submit">Заказать звонок</button>
+            <button aria-label="Заказать звонок" class="button form-btn" type="submit">Заказать звонок</button>
             <p class="form__explanation">Нажав кнопку «Заказать звонок», я даю согласие на обработку моих
               персональных данных.</p>
           </fieldset>

@@ -10,39 +10,38 @@
 </head>
 
 <body>
-    <div class="header-wrap_bg">
-        <div class="header-wrap">
-            <header class="header">
-                <div class="container">
-                    <div class="header-items">
-                        <div class="header-item">
-                            <p>Импортно-экспортная компания</p>
-                        </div>
-                        <div class="header-item header-logo">
-                            <img class="header-logo__line" src="img/main/line.png" alt="">
-                            <a href="index.html"><img src="img/main/main-logo.png" alt=""></a>
-                            <img class="header-logo__line" src="img/main/line.png" alt="">
-                        </div>
-                        <div class="header-item">
-                            <div class="header-phone">
-                                <a class="header-number" href="tel:8(961)996-25-03">8 (961) 996-25-03</a>
-                                <button class="button header-btn popup-call--open">Заказать звонок</button>
-                            </div>
+
+    <header class="header">
+        <div class="header-wrap header-wrap_bg">
+            <div class="container">
+                <div class="header-items">
+                    <div class="header-item">
+                        <p>Импортно-экспортная компания</p>
+                    </div>
+                    <div class="header-item header-logo">
+                        <img class="header-logo__line" src="img/main/line.png" alt="линия">
+                        <a href="index.html"><img src="img/main/main-logo.png" alt="BTG логотип"></a>
+                        <img class="header-logo__line" src="img/main/line.png" alt="линия">
+                    </div>
+                    <div class="header-item">
+                        <div class="header-phone">
+                            <a class="header-number" href="tel:8(961)996-25-03">8 (961) 996-25-03</a>
+                            <button class="button header-btn popup-call--open">Заказать звонок</button>
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
             <nav class="header-nav navbar">
                 <div class="container">
                     <div class="navbar-burger navbar-burger--open">
                         <span class="navbar-burger__btn"></span>
                     </div>
                     <ul class="navbar-list">
-                        <li class="navbar-item"><a href=index.html>О компании</a></li>
-                        <li class="navbar-item"><a href=page.html>Услуги</a></li>
-                        <li class="navbar-item"><a href="#">Новости</a></li>
-                        <li class="navbar-item"><a href=#>Калькулятор</a></li>
-                        <li class="navbar-item"><a href=#>Контакты</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href=index.html>О компании</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href=page.html>Услуги</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="#">Новости</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href=#>Калькулятор</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href=#>Контакты</a></li>
                         <li class="navbar-item">
                             <form id="navbar-search">
                                 <input type="search" placeholder="Искать">
@@ -52,7 +51,8 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </header>
+
     <main>
         <div class="main-wrap">
             <section class="main-service">
@@ -115,8 +115,8 @@
                 <div class="content-gallery gallery">
                     <h3 class="content-heading gallery-heading">Галерея изображений</h3>
                     <div class="gallery__wrap">
-                        <img class="gallery-img" src="img/page/1.jpg" width="402" height="223" alt="ship">
-                        <img class="gallery-img" src="img/page/2.jpg" width="402" height="223" alt="plane">
+                        <img class="gallery-img" src="img/page/1.jpg" width="402" height="223" alt="корабль">
+                        <img class="gallery-img" src="img/page/2.jpg" width="402" height="223" alt="самолет">
                     </div>
                 </div>
                 <div class="content-reviews review">
@@ -206,11 +206,12 @@
                         </div>
                         <div class="form__info">
                             <input type="text" class="form__field" placeholder="Как Вас зовут?">
-                            <input type="text" class="form__field" placeholder="Номер телефона">
+                            <input type="tel" class="form__field" placeholder="Номер телефона">
                         </div>
                     </div>
                     <div class="form-wrap__btn">
-                        <button class="button form-btn" type="submit">Получить расчет</button>
+                        <button class="button form-btn" aria-label="Получить расчет" type="submit">Получить
+                            расчет</button>
                     </div>
                     <p class="form__explanation">Нажав кнопку «Получить расчет», я даю согласие на обработку моих
                         персональных данных.</p>
@@ -219,20 +220,20 @@
         </div>
         <div class="wrap">
             <div class="footer-wrap">
-                <a href="#" class="logo"><img src="img/footer/logo.png" alt=""></a>
+                <a href="index.html" class="logo"><img src="img/footer/logo.png" alt="BTG логотип"></a>
                 <nav class="footer-nav navbar">
                     <div class="container">
                         <ul class="navbar-list">
-                            <li class="navbar-item"><a href=#>О компании</a></li>
-                            <li class="navbar-item"><a href=#>Услуги</a></li>
-                            <li class="navbar-item"><a href=#>Новости</a></li>
-                            <li class="navbar-item"><a href=#>Калькулятор</a></li>
-                            <li class="navbar-item"><a href=#>Контакты</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="index.html">О компании</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="page.html">Услуги</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#">Новости</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#">Калькулятор</a></li>
+                            <li class="navbar-item"><a class="navbar-link" href="#">Контакты</a></li>
                         </ul>
                     </div>
                 </nav>
                 <p class="footer-author">Создание сайта:<a href="#" class="author-logo"><img
-                            src="img/footer/dev-logo.png" width="95" height="32" alt="#"></a></p>
+                            src="img/footer/dev-logo.png" width="95" height="32" alt="ИРС логотип"></a></p>
             </div>
         </div>
     </footer>
@@ -251,7 +252,7 @@
                         </p>
                         <p class="popup-info">
                             <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
-                            <input type="text" class="form__field" id="number" placeholder="Номер телефона">
+                            <input type="tel" class="form__field" id="number" placeholder="Номер телефона">
                         </p>
                         <button class="button form-btn" type="submit">Заказать звонок</button>
                         <p class="form__explanation">Нажав кнопку «Заказать звонок», я даю согласие на обработку моих
@@ -272,7 +273,7 @@
                     <fieldset>
                         <p class="popup-info">
                             <input type="text" class="form__field" id="name" placeholder="Как Вас зовут?">
-                            <input type="text" class="form__field" id="number" placeholder="Номер телефона">
+                            <input type="tel" class="form__field" id="number" placeholder="Номер телефона">
                         </p>
                         <button class="button form-btn" type="submit">Заказать звонок</button>
                         <p class="form__explanation">Нажав кнопку «Заказать звонок», я даю согласие на обработку моих

@@ -140,6 +140,10 @@
         border-bottom: 2px solid #a0a0a0;
     }
 
+    table tr:last-child {
+        border-bottom: none;
+    }
+
     table td:before {
         content: attr(data-label);
         float: left;
@@ -443,6 +447,16 @@
     .navbar-burger__btn::after {
         content: '';
         top: 10px;
+    }
+
+    .navbar-link:hover:after {
+        width: 30px;
+    }
+
+    .navbar-link:after {
+        position: absolute;
+        bottom: -10px;
+        right: 100%;
     }
 
     .header-items {
@@ -956,6 +970,10 @@
         height: 340px;
     }
 
+    .header-nav .navbar-list {
+        top: -250px;
+    }
+
 }
 
 @media (max-width: 432px) {
@@ -1050,5 +1068,9 @@
     .main-wrap .services-name {
         max-width: 320px;
 
+    }
+
+    .header-nav .navbar-list {
+        top: -290px;
     }
 }
